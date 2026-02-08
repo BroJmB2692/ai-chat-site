@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Nova AI Chat</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- Chat UI Container -->
   <div class="chat-container" id="chat">
-    <!-- Messages will be injected here -->
+    <!-- Messages will be added here by script.js -->
   </div>
 
-  <input id="userInput" placeholder="Type a message...">
-  <button id="sendBtn" onclick="sendMessage()">Send</button>
+  <!-- Input + Send Button Row -->
+  <div class="input-row">
+    <input id="userInput" placeholder="Type a message...">
+    <button id="sendBtn">Send</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
