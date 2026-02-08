@@ -2,21 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nova AI Chat</title>
+  <title>iMessage‑Style Chat</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Chat UI Container -->
-  <div class="chat-container" id="chat">
-    <!-- Messages will be added here by script.js -->
-  </div>
+  <!-- Chat Window -->
+  <div class="chat-wrapper">
+    <div class="chat-header">
+      <div class="chat-title">Nova</div>
+      <div class="chat-subtitle">Online</div>
+    </div>
 
-  <!-- Input + Send Button Row -->
-  <div class="input-row">
-    <input id="userInput" placeholder="Type a message...">
-    <button id="sendBtn">Send</button>
+    <div class="chat-container" id="chat">
+      <!-- Messages will be injected here -->
+    </div>
+
+    <!-- Input Row -->
+    <div class="input-row">
+      <input id="userInput" placeholder="iMessage…">
+      <button id="sendBtn">Send</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
