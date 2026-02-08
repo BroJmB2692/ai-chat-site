@@ -7,10 +7,15 @@
 
 <h2>My AI Assistant</h2>
 
-<div id="chat"></div>
-<input id="input" placeholder="Ask something..." />
-<button onclick="send()">Send</button>
+<div id="chat-widget">
+  <div id="chat-log"></div>
+  <div id="chat-input-row">
+    <input id="chat-input" type="text" placeholder="Ask me anything..." />
+    <button id="chat-send">Send</button>
+  </div>
+</div>
 
-<script src="script.js"></script>
+<script src="chat.js"></script>
+
 </body>
 </html>
