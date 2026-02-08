@@ -39,3 +39,22 @@ async function sendMessage() {
   addMessage(data.reply, "bot");
 }
 
+document.getElementById("sendBtn").addEventListener("click", sendMessage);
+
+async function sendMessage() {
+  const input = document.getElementById("userInput");
+  const message = input.value.trim();
+  if (!message) return;
+
+  addMessage(message, "user");
+  input.value = "";
+
+  const res = await fetch(BACKEND_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ message }),
+  });
+
+  const data = await res.json();
+  addMessage(data.reply, "bot");
+}
