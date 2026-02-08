@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://ai-chat-backend-e2vg7kgog-engageits-projects.vercel.app/api/chat"; // <-- update if different
+const BACKEND_URL = "https://ai-chat-backend-swart.vercel.app/api/chat"; // <-- update if different
 
 const chatLog = document.getElementById("chat-log");
 const chatInput = document.getElementById("chat-input");
