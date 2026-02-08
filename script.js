@@ -1,7 +1,7 @@
 async function send() {
   const msg = input.value;
 
-  const res = await fetch("https://ai-chat-backend-heuarrcph-engageits-projects.vercel.app/api/chat", {
+  const res = await fetch("https://ai-chat-backend-olive-gamma.vercel.app/api/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
