@@ -1,3 +1,5 @@
+const BACKEND_URL = "https://ai-chat-backend-swart.vercel.app/api/chat"; // <-- update if different
+
 function addMessage(text, sender) {
   const chat = document.getElementById("chat");
 
